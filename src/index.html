@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <title>Home - ExpertsHere</title>
+
+    <script>
+        //Toggle functionality with JQuery and JS
+        // Shorthand for $( document ).ready()
+        $(document).ready(function(){
+            $('#icon').click(function(){
+                $('ul').toggleClass('show');
+            });
+        });
+        //End of Toggle function
+    </script>
+</head>
+<body>
+        <!--*************START of Header Navbar-->
+        <nav>
+            <div class="logo-wrapper"><a href="/src/index.html"><img class="logo" src="/assets/logo.png"></a></div>
+            <ul>
+                <li class="menu effect"><a class="active" href="/src/index.html">Home</a></li>
+                <li class="menu effect"><a href="/src/about.html">About</a></li>
+                <li class="menu effect"><a href="/src/findanexpert.html">Find An Expert</a></li>
+                <li class="menu effect"><a href="/src/becomeanexpert.html">Become An Expert</a></li>
+                <li class="menu"><a class="login-btn" href="/src/userlogin.html">Login</a></li>
+                <li class="profile-photo"><img class="profile" src="/profiles/modified passport.jpg" onclick="toggleMenu()"></li>
+        
+                <div class="profile-drop-mobile visibility">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <img src="/profiles/modified passport.jpg">
+                            <h3 class="user-name">Tyler Gobka Bright</h3>
+                        </div>
+                        <hr>
+                        <a href="/src/profileviewpage.html" class="user-menu-link">
+                            <i class="fa-solid fa-user-gear"></i>
+                            <p>Profile</p>
+                        </a>
+                        <a href="/src/userlogin.html" class="user-menu-link">
+                            <i class="fa-solid fa-arrow-right-from-bracket user-logout-icon"></i>
+                            <p>Logout</p>
+                        </a>
+                    </div>
+                </div>
+            </ul>
+            <label id="icon">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <div class="user-submenu-wrapper" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="/profiles/modified passport.jpg">
+                        <h3 class="user-name">Tyler Gobka Bright</h3>
+                    </div>
+                    <hr>
+                    <a href="/src/profileviewpage.html" class="user-menu-link">
+                        <i class="fa-solid fa-user-gear"></i>
+                        <p>Profile</p>
+                    </a>
+                    <a href="/src/userlogin.html" class="user-menu-link">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        <p>Logout</p>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!--*************END of Header Navbar-->
+
+        <!--Hero section with hero Banner Slider-->
+        <div class="slider">
+            <div class="myslider slide">
+                <div class="text">
+                  <h1>Search Engine to find Experts in Dagbon</h1>
+                </div>
+                <img src="/assets/slider one.jpg" style="width: 100%; height: 80vh;">
+            </div>
+            <div class="myslider slide">
+                <div class="text">
+                  <h1>Discover Experts in Every Niche</h1>
+                  <p>Are you on the lookout for top-notch Web Developers or Designers? 
+                    Look no further! With Experts Finder, finding the right talent has 
+                    never been easier. Our platform showcases a wide array of experts, 
+                    from seasoned veterans to rising stars, all eager to take on your 
+                    web development and design challenges.
+                </p>
+                </div>
+                <img src="/assets/slider four.jpg" style="width: 100%; height: 80vh;">
+            </div>
+            <div class="myslider slide">
+                <div class="text">
+                  <h1>Search Engine to find Experts in Dagbon</h1>
+                </div>
+                <div class="descriptions">
+                    <span class="listing">
+                        <span class="fa-solid fa-user-check bullet"></span>
+                    <p>Permanent affiliation with a university or college (no PhD candidates or visiting faculty).</p>
+                    </span>
+                    <span class="listing">
+                        <span class="fa-solid fa-user-check bullet" ></span>
+                    <p>Located in the Northern Region, Dagbon, Ghana or the surbodinate towns</p>
+                    </span>
+                </div>
+                <img src="/assets/slider two.jpg" style="width: 100%; height: 80vh;">
+            </div>
+            <div class="myslider slide">
+                <div class="text">
+                  <h1>Search Engine to find Experts in Dagbon</h1>
+                </div>
+                <img src="/assets/slider three.jpg" style="width: 100%; height: 80vh;">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+            <a class="next" onclick="plusSlides(1)">&#10095</a>
+
+            <div class="dotsbox" style="text-align: center;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+        <!--End of Hero Section With Hero Slider-->
+
+        <!--*********Front Search Box Area-->
+        <section class="search-box-section">
+            <div class="search-bar-wrapper">
+                <div class="search-input">
+                    <div class="user-icon-box">
+                        <i class="fa-solid fa-user-tie fa-fade"></i>
+                    </div>
+                    <input type="text" placeholder="Search Experts Here">
+                    <!-- Start of Auto Complete Search Box-->
+                    <div class="autocom-box">
+                        <li>Programming Language</li>
+                        <li>Assembly Language</li>
+                        <li>Machine Learning</li>
+                        <li>Artificial Intellegence</li>
+                        <li>Python Programming</li>
+                        <li>Cpp Language</li>
+                        <li>Object Oriented Programming</li>
+                    </div>
+                    <!-- END of Auto Complete Search Box-->
+                    <div class="search-icon-box">
+                        <a href="/src/resultspage.html">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass fa-fade"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--********/ENd of Front Search Box-->
+        
+        <section class="discover-experts-section">
+            <div class="discover-experts-container">
+                <div class="discover-title">
+                    <h1>Discover Experts In Every Niche</h1>
+                </div>
+                <div class="discover-content">
+                    <p>Are you on the lookout for top-notch Web Developers or Designers? 
+                        Look no further! With Experts Finder, finding the right talent 
+                        has never been easier. Our platform showcases a wide array of 
+                        experts, from seasoned veterans to rising stars, all eager to 
+                        take on your web development and design challenges.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-it-works-section">
+            <h1>How It Works</h1>
+            <div class="cards-wrapper">
+                <div class="card">
+                    <span class="top-stroke">Register</span>
+                    <div class="card-content">
+                        <span class="fa-sharp fa-solid fa-1 fa-fade card-icon"></span>
+                        <p>Sign up for free and create your personalized account.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <span class="top-stroke">Register</span>
+                    <div class="card-content">
+                        <span class="fa-sharp fa-solid fa-2 fa-fade card-icon"></span>
+                        <p>Specify your project requirements and target expertise.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <span class="top-stroke">Register</span>
+                    <div class="card-content">
+                        <span class="fa-sharp fa-solid fa-3 fa-fade card-icon"></span>
+                        <p>Browse through a diverse pool of experts and their portfolios.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <span class="top-stroke">Register</span>
+                    <div class="card-content">
+                        <span class="fa-sharp fa-solid fa-4 fa-fade card-icon"></span>
+                        <p>Connect with your chosen expert and kickstart your project!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-choose-section">
+            <h1>Why Choose Experts Finder?</h1>
+            <div class="why-choose-cards-wrapper">
+                <div class="cards-row">
+                    <div class="why-choose-card">
+                        <span class="why-stroke">Why</span>
+                        <div class="why-choose-card-content">
+                            <span class="fa-sharp fa-solid fa-user-check fa-fade why-card-icon"></span>
+                            <h3>Unparalleled Expertise</h3>
+                            <p>Our platform hosts a handpicked selection of experts who 
+                                have proven their capabilities and demonstrated their 
+                                skills in their respective domains.</p>
+                        </div>
+                    </div>
+                    <div class="why-choose-card">
+                        <span class="why-stroke">Why</span>
+                        <div class="why-choose-card-content">
+                            <span class="fa-solid fa-object-group fa-fade why-card-icon"></span>
+                            <h3>User-Friendly Interface</h3>
+                            <p>We believe in simplicity and efficiency. Our intuitive 
+                                interface ensures a seamless experience while searching 
+                                for the perfect match for your projects.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-row">
+                    <div class="why-choose-card">
+                        <span class="why-stroke">Why</span>
+                        <div class="why-choose-card-content">
+                            <span class="fa-regular fa-handshake fa-fade why-card-icon"></span>
+                            <h3>Trust and Reliability</h3>
+                            <p>Every expert on our platform goes through a stringent 
+                                verification process, giving you the confidence that you're 
+                                engaging with reliable and trustworthy professionals.</p>
+                        </div>
+                    </div>
+                    <div class="why-choose-card">
+                        <span class="why-stroke">Why</span>
+                        <div class="why-choose-card-content">
+                            <span class="fa-solid fa-comments fa-fade why-card-icon"></span>
+                            <h3>Tailored Recommendations</h3>
+                            <p>Tell us your requirements, and we'll curate a list of experts 
+                                who align perfectly with your needs, saving you time and 
+                                effort.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Carousel Testimonial How It Works-->
+        <section class="testimonials-section">
+            <div class="slideshow-container">
+                <div class="testimonial-slide slide">
+                    <div class="slide-show">
+                        <span><img src="../profiles/modified passport.jpg" class="image"></span>
+                        <p>
+                            Your testimonial should only be two or three paragraphs, at most. 
+                            They should be written in your customer's tone so that your 
+                            testimonial doesn't seem overly formal or technical. Testimonials 
+                            are accessible, easy to understand the content that connects with 
+                            potential customers.
+                        </p>
+                        <i class="fa-solid fa-quote-left fa-fade quote-icon"></i>
+                        <div class="details">
+                            <span class="name">Tyler Gobka Bright</span>
+                            <span class="job">Web Developer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide slide">
+                    <div class="slide-show">
+                        <span><img src="../assets/profile2.jpg" class="image"></span>
+                        <p>
+                            Your testimonial should only be two or three paragraphs, at most. 
+                            They should be written in your customer's tone so that your 
+                            testimonial doesn't seem overly formal or technical. Testimonials 
+                            are accessible, easy to understand the content that connects with 
+                            potential customers.
+                        </p>
+                        <i class="fa-solid fa-quote-left fa-fade quote-icon"></i>
+                        <div class="details">
+                            <span class="name">Tyler Gobka Bright</span>
+                            <span class="job">Graphic Designer</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more testimonials as needed -->
+                
+                <!-- Navigation arrows -->
+                <a class="prev swiper-button-prev" onclick="changeSlide(-1)"></a>
+                <a class="next swiper-button-next" onclick="changeSlide(1)"></a>
+            </div>
+        </section>
+        <!--End of Carousel Testimonial How it Works-->
+
+        <section class="call-To-Action">
+            <div class="call-To-Action-container">
+                <div class="left-call">
+                    <h3>Join Our Growing Community</h3>
+                    <p>At Experts Finder, we're not just building a search engine; 
+                        we're fostering a community of professionals passionate 
+                        about their craft. As a Web Developer or Designer, you'll 
+                        have the opportunity to showcase your talent and connect 
+                        with clients from around the globe.</p>
+                </div>
+                <div class="right-call">
+                    <a href="/src/becomeanexpert.html" class="call-btn">Become An Expert</a>
+                </div>
+            </div>
+        </section>
+
+        <!--Find Experts By The Numbers Start-->
+        <section class="experts-by-numbers">
+            <div class="transparency-cover">
+            <h1 class="experts-by-numbers-title">Expertise Finder by the numbers</h1>
+            <div class="experts-by-numbers-row">
+                <div class="by-numbers-column">
+                    <h1>Built</h1>
+                    <p>As Search Engine</p>
+                </div>
+                <div class="by-numbers-column">
+                    <h1>2M+</h1>
+                    <p>User Per Year</p>
+                </div>
+                <div class="by-numbers-column">
+                    <h1>10+</h1>
+                    <p>Year Supporting Media</p>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!--/END of find the Experts by the Numbers-->
+
+        <section class="feedback" id="feedback">
+            <div class="feedback-container">
+                <div class="left-feedback">
+                    <h3>We'd Love to Hear Your Feedback</h3>
+                    <p>Your feedback is incredibly valuable to us as we strive 
+                        to continuously improve our platform. Feel free to 
+                        share your thoughts, suggestions, or questions in the 
+                        comments below.</p>
+                </div>
+                <div class="right-feedback">
+                    <form>
+                        <input for="name" placeholder="Enter Your Full Name">
+                        <input for="work" placeholder="Enter Your Work">
+                        <input for="institution" placeholder="Enter Your Institution">
+                        <textarea placeholder="Enter Your Feedback Here..."></textarea>
+                        <button class="btn-feedback" type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    <!--Page Footer Begginning-->
+    <footer>
+        <!--Full Conatainer Containing the Main and Sub Footer-->
+        <div class="full-in-two">
+            <!--*******Main Footer Row, First Row******-->
+            <div class="footer-row">
+                <!--First Column-->
+                <div class="footer-column first-child">
+                    <div class="footer-title"><h1>Expertise Finder</h1></div>
+                    <p>Supporting expertise with sofware and services since 2011</p>
+                    
+                    <div class="social-icon">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-google"></i>
+                    </div>
+                </div>
+                <!--/End, First Column-->
+
+                <!--Second Column-->
+                <div class="footer-column">
+                    <div class="footer-title"><h1>Company</h1></div>
+                    <li><a href="/src/about.html">About</a></li>
+                    <li><a href="/src/findanexpert.html#contact-popup">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Blog</a></li>
+                </div>
+                <!--/End, Second Column-->
+
+                <!--Third Column-->
+                <div class="footer-column">
+                    <div class="footer-title"><h1>Services</h1></div>
+                    <li><a href="#">Profiles optimization (SEO)</a></li>
+                    <li><a href="#">Dedicated point of contact</a></li>
+                    <li><a href="#">Media relations contact</a></li>
+                    <li><a href="#">Experts Directory Software</a></li>
+                </div>
+                <!--/End, Third Column-->
+
+                <!--Fourth Column-->
+                <div class="footer-column">
+                    <div class="footer-title"><h1>Useful Links</h1></div>
+                    <li><a href="index.html#feedback">Give A Feedback</a></li>
+                    <li><a href="#">Why List Your Faculty</a></li>
+                    <li><a href="/src/findanexpert.html">Find An Expert</a></li>
+                    <li><a href="/src/becomeanexpert.html">Become An Expert</a></li>
+                </div>
+                <!--/End, Fourth Column-->
+
+                <!--Fith Column-->
+                <div class="footer-column">
+                    <div class="footer-title"><h1>Contact</h1></div>
+                    <li><a href="index.html#feedback">Give A Feedback</a></li>
+                    <li><a href="/src/findanexpert.html#contact-popup">Make A Request</a></li>
+                    <li><a href="#">Supporting Expertise</a></li>
+                </div>
+                <!--/End, Fith Column-->
+            </div>
+            <!--******/End of Main Footer Row, First Row******-->
+
+            <!--*****Sub Footer(Second Footer)*****-->
+            <div class="second-row">
+                <div class="second-footer-content">
+                    <div class="footer-logo twofooter-column">
+                        <i class="fa-brands fa-shopify"></i>
+                        <h1>ExpertHere</h1>
+                    </div>
+                    <div class="twofooter-column second-child">
+                        <p><span>&copy</span>2023 ExpertsHere Finder Cooperartion</p>
+                    </div>
+                    <div class="twofooter-column last-child">
+                        <p>Privacy</p>
+                        <p>Terms</p>
+                    </div>
+                </div>
+            </div>
+            <!--/End of *****Sub Footer(Second Footer)*****-->
+
+        </div>
+        <!--/End of Full Conatainer Containing the Main and Sub Footer-->
+
+    </footer>
+    <!--Scroll to Top Button-->
+    <button onclick="topFunction()" id="topscroll" title="Go to top">
+        <i class="fa-solid fa-angles-up fa-beat-fade"></i>
+    </button>
+    <!--/End of Scroll to Top Button-->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script src="../js/script.js"></script>
+<script src="../js/searchsuggestion.js"></script>
+</html>

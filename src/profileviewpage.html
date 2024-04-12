@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/profileviewpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <title>Profile View</title>
+
+    <script>
+        //Toggle functionality with JQuery and JS
+        // Shorthand for $( document ).ready()
+        $(document).ready(function(){
+            $('#icon').click(function(){
+                $('ul').toggleClass('show');
+            });
+        });
+        //End of Toggle function
+    </script>
+
+</head>
+<body>   
+    
+    <!--*************START of Header Navbar-->
+    <nav>
+        <div class="logo-wrapper"><a href="/src/index.html"><img class="logo" src="/assets/logo.png"></a></div>
+        <ul>
+            <li class="menu effect"><a class="active" href="/src/index.html">Home</a></li>
+            <li class="menu effect"><a href="/src/about.html">About</a></li>
+            <li class="menu effect"><a href="/src/findanexpert.html">Find An Expert</a></li>
+            <li class="menu effect"><a href="/src/becomeanexpert.html">Become An Expert</a></li>
+            <li class="menu"><a class="login-btn" href="/src/userlogin.html">Login</a></li>
+            <li class="profile-photo"><img class="profile" src="/profiles/modified passport.jpg" onclick="toggleMenu()"></li>
+        
+            <div class="profile-drop-mobile">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="/profiles/modified passport.jpg">
+                        <h3 class="user-name">Tyler Gobka Bright</h3>
+                    </div>
+                    <hr>
+                    <a href="/src/profileviewpage.html" class="user-menu-link">
+                        <i class="fa-solid fa-user-gear"></i>
+                        <p>Profile</p>
+                    </a>
+                    <a href="/src/userlogin.html" class="user-menu-link">
+                        <i class="fa-solid fa-arrow-right-from-bracket user-logout-icon"></i>
+                        <p>Logout</p>
+                    </a>
+                </div>
+            </div>
+        </ul>
+        <label id="icon">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <div class="user-submenu-wrapper" id="subMenu">
+            <div class="sub-menu">
+                <div class="user-info">
+                    <img src="/profiles/modified passport.jpg">
+                    <h3 class="user-name">Tyler Gobka Bright</h3>
+                </div>
+                <hr>
+                <a href="/src/profileviewpage.html" class="user-menu-link">
+                    <i class="fa-solid fa-user-gear"></i>
+                    <p>Profile</p>
+                    <span><i class="fa-solid fa-angle-right"></i></span>
+                </a>
+                <a href="/src/userlogin.html" class="user-menu-link">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <p>Logout</p>
+                    <span><i class="fa-solid fa-angle-right"></i></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+        <!--*************END of Header Navbar-->
+
+    <!-- Start of Expert full Profile View Section-->
+    <section id="profile-view-section">
+        <!--Start of the Main Profile View With Info Section-->
+        <div class="profile-view-wrapper">
+            <!--Start of the Name Box for the First Grid Row with 3 span-->
+            <div class="boxes" id="name-box">
+                <h1 class="underlined">Tyler Gobka Bright, University Of Ghana </h1>
+                <div class="name-box-wrapper">
+                    <!--Profile Picture Floating Left-->
+                    <div class="profileLeft">
+                        <div class="expert-profile ">
+                            <p><span class="occupation">Professor</span></p>
+                            <img id="profilephoto" src="/profiles/modified passport.jpg" 
+                            alt="Profile photo of Tyler, expert at Cornell University">
+                        </div>
+                    </div>
+                    <!--End of Profile Picture Floating Left-->
+                    
+                    <!--General Or Contact Info Floating Right-->
+                    <div class="generalDetails">
+                        <h3>Contact Info:</h3>
+                        <p>
+                            <span class="spacify">
+                                <span style="color: #183153;" class="fa fa-location-arrow"></span>
+                                <span style="padding-left: 10px;">Ghana, Accra</span>
+                            </span>
+                            <span class="spacify">
+                                <span style="color: #183153;" class="fa fa-at"></span>
+                                <a id="email_address_1" style="padding-left: 10px;" href="#" class="linkify notxtstyle">elc55@cornell.edu</a>
+                            </span>
+                            <span class="spacify">
+                                <span style="color: #183153;" class="fa fa-phone"></span>
+                                <span style="padding-left: 10px;">Phone:</span>
+                                <span class="spacify">                           
+                                    <span style="padding-left: 5px;">(607) 255-7344</span><br>                          
+                                </span>
+                            </span>                           
+                            <span class="spacify">
+                                <span style="color: #183153;" class="fa-sharp fa-solid fa-location-dot"></span>
+                                <span style="padding-left: 10px;">Address:</span>
+                                <span class="spacify">                           
+                                    <span style="padding-left: 5px;">C.K Tedam University, P. O Box 24, Navrongo</span><br>                          
+                                </span>
+                            </span>                           
+                            <span class="spacify">
+                                <span style="color: #183153;" class="fa-sharp fa-solid fa-location-dot"></span>
+                                <span style="padding-left: 10px;">Address:</span>
+                                <span class="spacify">                           
+                                    <span style="padding-left: 5px;">C.K Tedam University, P. O Box 24, Navrongo</span><br>                          
+                                </span>
+                            </span>                           
+                            <span class="spacify">
+                                <span style="color: #183153;" class="fa-sharp fa-solid fa-location-dot"></span>
+                                <span style="padding-left: 10px;">Address:</span>
+                                <span class="spacify">                           
+                                    <span style="padding-left: 5px;">C.K Tedam University, P. O Box 24, Navrongo</span><br>                          
+                                </span>
+                            </span>                           
+                            <span class="spacify">
+                                <span style="color: #183153;" class="fa-sharp fa-solid fa-location-dot"></span>
+                                <span style="padding-left: 10px;">Address:</span>
+                                <span class="spacify">                           
+                                    <span style="padding-left: 5px;">C.K Tedam University, P. O Box 24, Navrongo</span><br>                          
+                                </span>
+                            </span>                           
+                            <span class="spacify">
+                                <span style="color: #183153;" class="fa-sharp fa-solid fa-location-dot"></span>
+                                <span style="padding-left: 10px;">Address:</span>
+                                <span class="spacify">                           
+                                    <span style="padding-left: 5px;">C.K Tedam University, P. O Box 24, Navrongo</span><br>                          
+                                </span>
+                            </span>                           
+                        </p>
+                    </div>
+                    <!--End of General Or Contact Info Floating Right-->
+                </div>
+            </div>
+            <!--END of the Name Box for the First Grid Row with 3 span-->
+
+            <!--Second Grid Row First Column Small Box(Expert In)-->
+            <div class="secondRowWrapper">
+                <div class="first-column-small">
+                    <div class="boxes smallBox">
+                        <h2 class="boxHeader">Expert In</h2>
+                        <div class="boxPadder boxFlow">
+                            <a class="notxtstyle linkify spacify" href="#">Communicating science</a>               
+                            <a class="notxtstyle linkify spacify" href="#">Science communication</a>               
+                            <a class="notxtstyle linkify spacify" href="#">Communicating science</a>               
+                            <a class="notxtstyle linkify spacify" href="#">Science communication</a>               
+                            <a class="notxtstyle linkify spacify" href="#">Communicating science</a>                           
+                        </div>
+                    </div>
+                    <!--End of Second Grid Row First Column Small Box(Expert In)-->
+                    <!--Third Grid Row First Column Small Box(Links)-->
+                    <div class="boxes linkBox smallBox">
+                        <h2 class="boxHeader">Links</h2>
+                        <div class="boxPadder boxFlow">
+                            <li><a class="notxtstyle linkify spacify" href="#" target="_blank">Faculty Page</a></li>               
+                            <li><a class="notxtstyle linkify spacify" href="#" target="_blank">Faculty Page</a></li>               
+                            <li><a class="notxtstyle linkify spacify" href="#" target="_blank">Faculty Page</a></li>               
+                            <li><a class="notxtstyle linkify spacify" href="#" target="_blank">Faculty Page</a></li>               
+                            <li><a class="notxtstyle linkify spacify" href="#" target="_blank">Faculty Page</a></li>              
+                        </div>
+                    </div>
+                    <!--End of Third Grid Row First Column Small Box(Links)-->
+                </div>
+                
+                <!--Second Grid Row 2nd and 3rd Column Long Box(Bio/Research)-->
+                <div id="minbio" class="boxes longBox">
+                    <h2 class="boxHeader">Bio</h2>
+                    <div class="readMoreContainer">
+                        <div class="boxPadder bioExpand">
+                            <p>
+                                My interest and experience is in communicating science for impact 
+                                and influence for public audiences, but particularly target audiences, 
+                                media, policy makers and opinion/thought leaders, and targeted stakeholder 
+                                groups. Focus is on understanding audience and using research-based techniques
+                                My interest and experience is in communicating science for impact 
+                                and influence for public audiences, but particularly target audiences, 
+                                media, policy makers and opinion/thought leaders, and targeted stakeholder 
+                                groups. Focus is on understanding audience and using research-based techniques, narra...
+                                and influence for public audiences, but particularly target audiences, 
+                                media, policy makers and opinion/thought leaders, and targeted stakeholder 
+                                groups. Focus is on understanding audience and using research-based techniques, narra...
+                                </span> 
+                                <br><br>                       
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End of Second Grid Row 2nd and 3rd Column Long Box(Bio/Research)-->
+        </div>
+        <!--END of the Main Profile View With Info Section-->
+
+    </section>
+    <!--END of Expert full Profile View Section-->
+
+    <footer class="second-row">
+        <div class="second-footer-content">
+            <div class="footer-logo twofooter-column">
+                <i class="fa-brands fa-shopify"></i>
+                <h1>ExpertHere</h1>
+            </div>
+            <div class="twofooter-column second-child">
+                <p><span>&copy</span>2023 ExpertsHere Finder Cooperartion</p>
+            </div>
+            <div class="twofooter-column last-child">
+                <p>Privacy</p>
+                <p>Terms</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script src="../js/profileviewpage.js"></script>
+</html>

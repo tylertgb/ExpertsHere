@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/resultspage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <title>Experts Results</title>
+
+    <script>
+        //Toggle functionality with JQuery and JS
+        // Shorthand for $( document ).ready()
+        $(document).ready(function(){
+            $('#icon').click(function(){
+                $('ul').toggleClass('show');
+            });
+        });
+        //End of Toggle function
+        
+    </script>
+</head>
+<body>
+        <!--*************START of Header Navbar-->
+        <nav>
+            <div class="logo-wrapper"><a href="/src/index.html"><img class="logo" src="/assets/logo.png"></a></div>
+            <ul>
+                <li class="menu effect"><a class="active" href="/src/index.html">Home</a></li>
+                <li class="menu effect"><a href="/src/about.html">About</a></li>
+                <li class="menu effect"><a href="/src/findanexpert.html">Find An Expert</a></li>
+                <li class="menu effect"><a href="/src/becomeanexpert.html">Become An Expert</a></li>
+                <li class="menu"><a class="login-btn" href="/src/userlogin.html">Login</a></li>
+                <li class="profile-photo"><img class="profile" src="/profiles/modified passport.jpg" onclick="toggleMenu()"></li>
+            
+                <div class="profile-drop-mobile">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <img src="/profiles/modified passport.jpg">
+                            <h3 class="user-name">Tyler Gobka Bright</h3>
+                        </div>
+                        <hr>
+                        <a href="/src/profileviewpage.html" class="user-menu-link">
+                            <i class="fa-solid fa-user-gear"></i>
+                            <p>Profile</p>
+                        </a>
+                        <a href="/src/userlogin.html" class="user-menu-link">
+                            <i class="fa-solid fa-arrow-right-from-bracket user-logout-icon"></i>
+                            <p>Logout</p>
+                        </a>
+                    </div>
+                </div>
+            </ul>
+            <label id="icon">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <div class="user-submenu-wrapper" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="/profiles/modified passport.jpg">
+                        <h3 class="user-name">Tyler Gobka Bright</h3>
+                    </div>
+                    <hr>
+                    <a href="/src/profileviewpage.html" class="user-menu-link">
+                        <i class="fa-solid fa-user-gear"></i>
+                        <p>Profile</p>
+                        <span><i class="fa-solid fa-angle-right"></i></span>
+                    </a>
+                    <a href="/src/userlogin.html" class="user-menu-link">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        <p>Logout</p>
+                        <span><i class="fa-solid fa-angle-right"></i></span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!--*************END of Header Navbar-->
+
+    <!--*********Front Search Box Area-->
+    <section class="search-box-section">
+        <div class="search-bar-wrapper">
+            <div class="search-input">
+                <div class="user-icon-box">
+                    <i class="fa-solid fa-user-tie fa-fade"></i>
+                </div>
+                <input type="text" placeholder="Search Experts Here">
+                <!-- Start of Auto Complete Search Box-->
+                <div class="autocom-box">
+                    <li>Programming Language</li>
+                    <li>Assembly Language</li>
+                    <li>Machine Learning</li>
+                    <li>Artificial Intellegence</li>
+                    <li>Python Programming</li>
+                    <li>Cpp Language</li>
+                    <li>Object Oriented Programming</li>
+                </div>
+                <!-- END of Auto Complete Search Box-->
+                <div class="search-icon-box">
+                    <a href="/src/resultspage.html">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass fa-fade"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--********/ENd of Front Search Box-->
+
+    <!--*****Experts Listing Section On Search Results*****-->
+    <section class="experts-list-section">
+        <!--Title Indicationg Found Number-->
+        <div class="results-title-wrapper">	
+            <div class="results-title">
+                <h2><span id="found-number" style="color: blueviolet;">150</span> Experts in <span id="expert-name-target" style="color:rgb(72, 82, 228)">"Science"</span> found.
+                    Showing results <span>1-25:</span></h2>
+            </div>
+            <div class="spin-experts-icon">
+                <i class="fa-solid fa-user-tie fa-spin"></i>
+            </div>
+        </div>
+        <!--/End of Title Indicationg Found Number-->
+
+        <!--******Experts GRID Listing Row******-->
+        <div class="experts-list-row">
+            <!--First Column-->
+            <div class="list-column">
+                <div class="experts-profile-box">
+                    <div class="profile-wrapper">
+                        <div class="top-color-span"></div>
+                        <div class="profile-box">
+                            <img src="../profiles/modified passport.jpg">
+                        </div>
+                    </div>
+                    <h1>Tyler Gobka Bright</h1>
+                    <div class="experts-in">
+                        <p>Expert In:</p>
+                        <ul>
+                            <li><a href="#">Computational social science</a></li>
+                            <li><a href="#">Computational Mathematics</a></li>
+                            <li><a href="#">Agricultural Science</a></li>
+                            <li><a href="#">Machine Learning</a></li>
+                        </ul>
+                    </div>
+                    <div class="button-wrapper">
+                        <a href="/src/profileviewpage.html"><button type="button">View Profile</button></a>
+                    </div>
+                </div>
+            </div>
+            <!--/End of First Column-->
+
+            <!--Second Column-->
+            <div class="list-column">
+                <div class="experts-profile-box">
+                    <div class="profile-wrapper">
+                        <div class="top-color-span"></div>
+                        <div class="profile-box">
+                            <img src="../profiles/modified passport.jpg">
+                        </div>
+                    </div>
+                    <h1>Tyler Gobka Bright</h1>
+                    <div class="experts-in">
+                        <p>Expert In:</p>
+                        <ul>
+                            <li><a href="#">Computational social science</a></li>
+                            <li><a href="#">Computational Mathematics</a></li>
+                            <li><a href="#">Agricultural Science</a></li>
+                            <li><a href="#">Machine Learning</a></li>
+                        </ul>
+                    </div>
+                    <div class="button-wrapper">
+                        <a href="/src/profileviewpage.html"><button type="button">View Profile</button></a>
+                    </div>
+                </div>
+            </div>
+            <!--/End of Second Column-->
+
+            <!--Third Column-->
+            <div class="list-column">
+                <div class="experts-profile-box">
+                    <div class="profile-wrapper">
+                        <div class="top-color-span"></div>
+                        <div class="profile-box">
+                            <img src="../profiles/modified passport.jpg">
+                        </div>
+                    </div>
+                    <h1>Tyler Gobka Bright</h1>
+                    <div class="experts-in">
+                        <p>Expert In:</p>
+                        <ul>
+                            <li><a href="#">Computational social science</a></li>
+                            <li><a href="#">Computational Mathematics</a></li>
+                            <li><a href="#">Agricultural Science</a></li>
+                            <li><a href="#">Machine Learning</a></li>
+                        </ul>
+                    </div>
+                    <div class="button-wrapper">
+                        <a href="/src/profileviewpage.html"><button type="button">View Profile</button></a>
+                    </div>
+                </div>
+            </div>
+            <!--/End of Third Column-->
+
+            <!--Fourth Column-->
+            <div class="list-column">
+                <div class="experts-profile-box">
+                    <div class="profile-wrapper">
+                        <div class="top-color-span"></div>
+                        <div class="profile-box">
+                            <img src="../profiles/modified passport.jpg">
+                        </div>
+                    </div>
+                    <h1>Tyler Gobka Bright</h1>
+                    <div class="experts-in">
+                        <p>Expert In:</p>
+                        <ul>
+                            <li><a href="#">Computational social science</a></li>
+                            <li><a href="#">Computational Mathematics</a></li>
+                            <li><a href="#">Agricultural Science</a></li>
+                            <li><a href="#">Machine Learning</a></li>
+                        </ul>
+                    </div>
+                    <div class="button-wrapper">
+                        <a href="/src/profileviewpage.html"><button type="button">View Profile</button></a>
+                    </div>
+                </div>
+            </div>
+            <!--/End of Fourth Column-->
+        </div>
+        <!--/ENd of******Experts GRID Listing Row******-->
+    </section>
+    <!--/End*****Experts Listing Section On Search Results*****-->
+
+    <!--****Sub Footer(Second Footer)*****-->
+    <footer class="second-row">
+        <div class="second-footer-content">
+            <div class="footer-logo twofooter-column">
+                <i class="fa-brands fa-shopify"></i>
+                <h1>ExpertHere</h1>
+            </div>
+            <div class="twofooter-column">
+                <p><span>&copy</span>2023 ExpertsHere Finder Cooperartion</p>
+            </div>
+            <div class="twofooter-column last-child">
+                <p>Privacy</p>
+                <p>Terms</p>
+            </div>
+        </div>
+    </footer>
+    <!--/End of****Sub Footer(Second Footer)*****-->
+
+    <!--Scroll to Top Button-->
+    <button onclick="topFunction()" id="topscroll" title="Go to top">
+        <i class="fa-solid fa-angles-up fa-beat-fade"></i>
+    </button>
+    <!--/End of Scroll to Top Button-->
+</body>
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script src="../js/resultspage.js"></script>
+<script src="../js/searchsuggestion.js"></script>
+</html>

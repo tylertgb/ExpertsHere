@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/becomeanexpert.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <title>Become An Expert</title>
+
+    <script>
+        //Toggle functionality with JQuery and JS
+        // Shorthand for $( document ).ready()
+        $(document).ready(function(){
+            $('#icon').click(function(){
+                $('ul').toggleClass('show');
+            });
+        });
+        //End of Toggle function
+    </script>
+
+</head>
+<body>
+        <!--*************START of Header Navbar-->
+        <nav>
+            <div class="logo-wrapper"><a href="/src/index.html"><img class="logo" src="/assets/logo.png"></a></div>
+            <ul>
+                <li class="menu effect"><a class="active" href="/src/index.html">Home</a></li>
+                <li class="menu effect"><a href="/src/about.html">About</a></li>
+                <li class="menu effect"><a href="/src/findanexpert.html">Find An Expert</a></li>
+                <li class="menu effect"><a href="/src/becomeanexpert.html">Become An Expert</a></li>
+                <li class="menu"><a class="login-btn" href="/src/userlogin.html">Login</a></li>
+                <li class="profile-photo"><img class="profile" src="/profiles/modified passport.jpg" onclick="toggleMenu()"></li>
+            
+                <div class="profile-drop-mobile">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <img src="/profiles/modified passport.jpg">
+                            <h3 class="user-name">Tyler Gobka Bright</h3>
+                        </div>
+                        <hr>
+                        <a href="/src/profileviewpage.html" class="user-menu-link">
+                            <i class="fa-solid fa-user-gear"></i>
+                            <p>Profile</p>
+                        </a>
+                        <a href="/src/userlogin.html" class="user-menu-link">
+                            <i class="fa-solid fa-arrow-right-from-bracket user-logout-icon"></i>
+                            <p>Logout</p>
+                        </a>
+                    </div>
+                </div>
+            </ul>
+            <label id="icon">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <div class="user-submenu-wrapper" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="/profiles/modified passport.jpg">
+                        <h3 class="user-name">Tyler Gobka Bright</h3>
+                    </div>
+                    <hr>
+                    <a href="/src/profileviewpage.html" class="user-menu-link">
+                        <i class="fa-solid fa-user-gear"></i>
+                        <p>Profile</p>
+                        <span><i class="fa-solid fa-angle-right"></i></span>
+                    </a>
+                    <a href="/src/userlogin.html" class="user-menu-link">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        <p>Logout</p>
+                        <span><i class="fa-solid fa-angle-right"></i></span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!--*************END of Header Navbar-->
+
+    <!--Start of Search Results Sear Bar Section-->
+    <section class="find-an-expert-bar-title">
+        <div class="finder-wrapper">
+            <img src="../assets/Mobile login-rafiki.png" width="400px">
+            <h1>Become An Expert</h1>
+        </div>
+    </section>
+
+    <section class="registration-section">
+        <div class="form-wrapper">
+            <ul class="whoCanRegister">
+                <p>All profiles are vetted before listed. You can sign up for free or choose a premium 
+                    plan for $5/month. If you choose a premium plan no payment is taken until the 
+                    application is approved.</p>
+                <span class="who-can-title"><h1>Who can apply to join:</h1></span>
+                <span class="listing">
+                    <span class="fa-solid fa-user-check bullet"></span>
+                <p>Permanent affiliation with a university or college (no PhD candidates or visiting faculty).</p>
+                </span>
+                <span class="listing">
+                    <span class="fa-solid fa-user-check bullet" ></span>
+                <p>Located in the Northern Region, Dagbon, Ghana or the surbodinate towns</p>
+                </span>
+                <span class="who-can-title"><h1>Required:</h1></span>
+                <span class="listing">
+                    <span class="fa-solid fa-user-check bullet"></span>
+                <p>Link to your institution's site that states your position (department faculty page is best)</p>
+                </span>
+                <span class="listing">
+                    <span class="fa-solid fa-user-check bullet"></span>
+                <p>All information submitted is publicly displayed. This includes phone numbers.</p>
+                </span>
+            </ul>
+
+            <div class="form-title"><h1>Register As An Expert</h1></div>
+
+            <form class="fullForm" action="#" method="post">
+                <div class="form-group-wrapper">
+                    <div class="form-group">
+                        <label for="academictitle">Title</label>
+                        <input type="text" id="academictitle" placeholder="eg. Prof. John Doe" name="academictitle" required>
+                        
+                        <span class="name-division">
+                            <ul class="names">
+                                <label for="firstname">First Name</label>
+                                <input type="text" id="fristname" name="firstname" required>
+                            </ul>
+                            <ul class="names">
+                                <label for="lastname">Last Name</label>
+                                <input type="text" id="lastname" name="lastname" required>
+                            </ul>
+                        </span>
+                    
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    
+                        <label for="phonenumber">Phone Number:</label>
+                        <input type="phone" id="phonenumber" placeholder="" name="phonenumber" required>
+                    
+                    </div>
+                    <div class="form-group">
+                        <label for="university">Name of Institution:</label>
+                        <input type="text" id="university" placeholder="eg. University of Ghana, use full official name" name="university" required>
+
+                        <label for="country">Country:</label>
+                        <input type="text" id="country" name="country" required>
+
+                        <label for="region">Region:</label>
+                        <input type="text" id="region" name="region" required>
+
+                        <label for="city">City/Town:</label>
+                        <input type="text" id="city" name="city" required>
+                    
+                    </div>
+                </div>
+                <span class="expertise-part"><h1>Expertise (*important section*)</h1></span>
+                <div class="form-group-wrapper">
+                    <div class="form-group">
+                        <label for="expertise">Expertise #1</label>
+                        <input type="text" id="expertise" name="expertise" required>
+                        <label for="expertise">Expertise #2</label>
+                        <input type="text" id="expertise" name="expertise" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="expertise">Expertise #3</label>
+                        <input type="text" id="expertise" name="expertise" required>
+                        <label for="expertise">Expertise #4</label>
+                        <input type="text" id="expertise" name="expertise" required>
+                    </div>
+                </div>
+                <span class="expertise-part"><h1>Links</h1></span>
+                <div class="links-group-wrapper">
+                    <div class="form-group links-group">
+                        <span class="label-input">
+                            <label class="style-label" for="personal-site">Personal Website</label>
+                            <input type="text" id="personal-site" placeholder="Website (https(s))://.." name="personal-site" required>
+                        </span>
+                        <span class="label-input">
+                        <label class="style-label" for="faculty">http://ckt@utas.edu.gh/</label>
+                        <input type="text" id="faculty" placeholder="URL of your institution website address" name="faculty" required>
+                        </span>
+                        <span class="label-input">
+                        <label class="style-label" for="twitter-url">http://twitter.com/johnsmith</label>
+                        <input type="text" id="twitter-url" placeholder="Twitter Profile/URL" name="twitter-url" required>
+                        </span>
+                    </div>
+                    <div class="form-group links-group">
+                        <span class="label-input">
+                        <label class="style-label" for="linkedin-url">http://www.linkedin.com/</label>
+                        <input type="text" id="linkedin-url" placeholder="LinkedIn Profile/URL" name="linkedin-url" required>
+                        </span>
+                        <span class="label-input">
+                        <label class="style-label" for="google-scholar">http://www.facebook.com/</label>
+                        <input type="text" id="google-scholar" placeholder="Facebook Profile" name="google-scholar" required>
+                        </span>
+                        <span class="label-input">
+                        <label class="style-label" for="other">http://www.youtube.com/</label>
+                        <input type="text" id="other"placeholder="Youtube Profile" name="other" required>
+                        </span>
+                    </div>
+                </div>
+                <span class="expertise-part"><h1>Profile Photo</h1></span>
+                <div class="photo-text-area-wrapper">
+                    <div class="form-group">
+                        <label for="upload-photo" required >Upload a headshot</label>
+                        <form class="profile-photo" id="upload_form" enctype="multipart/form-data" method="post">
+                            <input type="file" name="file1" id="file1" onchange="uploadFile()">
+                            <progress id="progressBar" value="0" max="100" style="width:100%; border: 1px #97a7bd94 solid;"></progress>
+                            <h3 id="status"></h3>
+                            <p id="loaded_n_total"></p>
+                        </form>
+                    </div>
+                    <div class="text-area">
+                        <label for="saysomething">Anything else you would like to tell us?</label>
+                        <textarea name="saysomething"id="saysomething" style="width:100%; height: 85px; resize: none; border: 1px #98c1fd solid; outline: none; font-size: 
+                        14px; padding: 5px;" 
+                        placeholder="Say something here..." ></textarea>
+                    </div>
+                </div>
+                <div class="btn-right">
+                    <button type="submit" class="submit-Btn">Register</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!--Page Footer Begginning-->
+    <footer>
+        <div class="full-in-two">
+            <div class="footer-row">
+                <div class="footer-column first-child">
+                    <div class="footer-title"><h1>Expertise Finder</h1></div>
+                    <p>Supporting expertise with sofware and services since 2011</p>
+                    
+                    <div class="social-icon">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-google"></i>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <div class="footer-title"><h1>Company</h1></div>
+                    <li><a href="/src/about.html">About</a></li>
+                    <li><a href="/src/findanexpert.html#contact-popup">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Blog</a></li>
+                </div>
+                <!--Third Column-->
+                <div class="footer-column">
+                    <div class="footer-title"><h1>Services</h1></div>
+                    <li><a href="#">Profiles optimization (SEO)</a></li>
+                    <li><a href="#">Dedicated point of contact</a></li>
+                    <li><a href="#">Media relations contact</a></li>
+                    <li><a href="#">Experts Directory Software</a></li>
+                </div>
+                <!--/End, Third Column-->
+
+                <!--Fourth Column-->
+                <div class="footer-column">
+                    <div class="footer-title"><h1>Useful Links</h1></div>
+                    <li><a href="index.html#feedback">Give A Feedback</a></li>
+                    <li><a href="#">Why List Your Faculty</a></li>
+                    <li><a href="/src/findanexpert.html">Find An Expert</a></li>
+                    <li><a href="/src/becomeanexpert.html">Become An Expert</a></li>
+                </div>
+                <!--/End, Fourth Column-->
+
+                <!--Fith Column-->
+                <div class="footer-column">
+                    <div class="footer-title"><h1>Contact</h1></div>
+                    <li><a href="index.html#feedback">Give A Feedback</a></li>
+                    <li><a href="/src/findanexpert.html#contact-popup">Make A Request</a></li>
+                    <li><a href="#">Supporting Expertise</a></li>
+                </div>
+                <!--/End, Fith Column-->
+            </div>
+
+            <div class="second-row">
+                <div class="second-footer-content">
+                    <div class="footer-logo twofooter-column">
+                        <i class="fa-brands fa-shopify"></i>
+                        <h1>ExpertHere</h1>
+                    </div>
+                    <div class="twofooter-column second-child">
+                        <p><span>&copy</span>2023 ExpertsHere Finder Cooperartion</p>
+                    </div>
+                    <div class="twofooter-column last-child">
+                        <p>Privacy</p>
+                        <p>Terms</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+    <!--Scroll to Top Button-->
+    <button onclick="topFunction()" id="topscroll" title="Go to top">
+        <i class="fa-solid fa-angles-up fa-beat-fade"></i>
+    </button>
+    <!--/End of Scroll to Top Button-->
+</body>
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script src="../js/becomeanexpert.js"></script>
+</html>

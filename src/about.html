@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <title>About</title>
+
+    <script>
+        //Toggle functionality with JQuery and JS
+        // Shorthand for $( document ).ready()
+        $(document).ready(function(){
+            $('#icon').click(function(){
+                $('ul').toggleClass('show');
+            });
+        });
+        //End of Toggle function
+    </script>
+
+</head>
+<body>
+        <!--*************START of Header Navbar-->
+        <nav>
+            <div class="logo-wrapper"><a href="/src/index.html"><img class="logo" src="/assets/logo.png"></a></div>
+            <ul>
+                <li class="menu effect"><a class="active" href="/src/index.html">Home</a></li>
+                <li class="menu effect"><a href="/src/about.html">About</a></li>
+                <li class="menu effect"><a href="/src/findanexpert.html">Find An Expert</a></li>
+                <li class="menu effect"><a href="/src/becomeanexpert.html">Become An Expert</a></li>
+                <li class="menu"><a class="login-btn" href="/src/userlogin.html">Login</a></li>
+                <li class="profile-photo"><img class="profile" src="/profiles/modified passport.jpg" onclick="toggleMenu()"></li>
+                
+                <div class="profile-drop-mobile">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <img src="/profiles/modified passport.jpg">
+                            <h3 class="user-name">Tyler Gobka Bright</h3>
+                        </div>
+                        <hr>
+                        <a href="/src/profileviewpage.html" class="user-menu-link">
+                            <i class="fa-solid fa-user-gear"></i>
+                            <p>Profile</p>
+                        </a>
+                        <a href="/src/userlogin.html" class="user-menu-link">
+                            <i class="fa-solid fa-arrow-right-from-bracket user-logout-icon"></i>
+                            <p>Logout</p>
+                        </a>
+                    </div>
+                </div>
+            </ul>
+            <label id="icon">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <div class="user-submenu-wrapper" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="/profiles/modified passport.jpg">
+                        <h3 class="user-name">Tyler Gobka Bright</h3>
+                    </div>
+                    <hr>
+                    <a href="/src/profileviewpage.html" class="user-menu-link">
+                        <i class="fa-solid fa-user-gear"></i>
+                        <p>Profile</p>
+                        <span><i class="fa-solid fa-angle-right"></i></span>
+                    </a>
+                    <a href="/src/userlogin.html" class="user-menu-link">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        <p>Logout</p>
+                        <span><i class="fa-solid fa-angle-right"></i></span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!--*************END of Header Navbar-->
+
+    <!--Start of Search Results Sear Bar Section-->
+    <section class="about-head-section">
+        <div class="about-head-wrapper">
+            <img src="../assets/About us page-amico (1).png" width="400px">
+            <h1>About</h1>
+        </div>
+    </section>
+<!--Content area of the front page ABOUT-->
+            <!--About Section-->
+            <section class="about-section">
+                <h1>About</h1>
+                <h3>Expert Database and National Researcher Network</h3>
+                <!--About Content Wrapper-->
+                <div id="about-wrapper">
+                    <!--1st Column-->
+                    <div class="about-profile about-column">
+                        <div class="spin-user-icon"><i class="fa-solid fa-user-tie fa-spin"></i></div>
+                        <img src="/assets/profile1.jpg">
+                    </div>
+                    <!--/End, 1st Column-->
+
+                    <!--2nd Column-->
+                    <div class="sidebar about-column">
+                        <p>
+                            ExpertsHere is the premier database of profiles 
+                            of scientists / researchers and other 
+                            faculty members working at leading academic 
+                            institutions and other R & D organisation 
+                            involved in teaching and research in India. 
+                            It provides important information about 
+                            expert's background, contact address, 
+                            experience, scholarly publications, skills 
+                            and accomplishments, researcher identity, 
+                            etc. The database developed and maintained 
+                            by Information and Library Network Centre 
+                            (INFLIBNET) with financial support from the 
+                            National Mission on Education through ICT 
+                            (NME-ICT). The database would be instrumental 
+                            in selection of panels of experts for various 
+                            committees, taskforce, established by the Ministries 
+                            / Govt. establishments for monitoring and evaluation 
+                            purposes.
+                        </p>
+                    </div>
+                    <!--/End, 2nd Column-->
+                </div>
+                <!--/End, About Content Wrapper-->
+            </section>
+            <!--/End, About Section-->
+        <!--*****/End of Content area of the front page About-->
+
+        <!--****Start of Site Objectives Section, Front Page******-->
+        <section class="objectives-section">
+            <h1>Our Objectives</h1>
+            <!--Row of the Objective Content-->
+            <div class="row">
+                    <!--1st Column-->
+                    <div class="column change-text-color">
+                        <div class="inner-column">
+                            <i class="fa-solid fa-stopwatch-20"></i>
+                            <div class="service-desc">
+                                <p>Quickly and conveniently provide information about expert to peers, prospective collaborators, funding agencies policy makers and research scholar in the country</p>
+                            </div>
+                        </div>
+                        <div class="inner-column">
+                            <i class="fa-solid fa-tower-broadcast"></i>
+                            <div class="service-desc">
+                                <p>Establish communication directly with the experts who possess the expertise needed by users</p>
+                            </div>
+                        </div>
+                        <div class="inner-column">
+                            <i class="fa-solid fa-rectangle-list"></i>
+                            <div class="service-desc">
+                                <p>Discover prospective collaborators for on-going research projects</p>
+                            </div>
+                        </div>
+                        <div class="inner-column">
+                            <i class="fa-solid fa-network-wired"></i>
+                            <div class="service-desc">
+                                <p>Identify peer reviewers for articles and research proposal</p>
+                            </div>
+                        </div>
+                        <div class="inner-column">
+                            <i class="fa-solid fa-right-left"></i>
+                            <div class="service-desc">
+                                <p>To create information exchanges and networking opportunities among scientists</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/End of 1st Column-->
+
+                    <!--3rd Column-->
+                    <div class="column"> 
+                        <img height="" alt="" src="/assets/user roll.jpg" class="mobile-img">
+                    </div>
+                    <!--/End of 3rd Column-->
+            </div>
+            <!--/End of Row of the Objective Content-->
+        </section>
+        <!--****/END of Site Objectives Section, Front Page****-->
+
+
+        <section class="services">
+            <h1>Services Includes</h1>
+            <div class="services-wrapper">
+                <div class="service">
+                    <span class="fa-solid fa-magnifying-glass service-icon"></span>
+                    <p>Profiles optimization for SEO on Google, Bing and 
+                    all leading search engines</p>
+                </div>
+                <div class="service">
+                    <span class="fa-solid fa-tty service-icon"></span>
+                    <p>Dedicated point of contact: 48 hours guarantee 
+                    to edit, add or remove profiles</p>
+                </div>
+                <div class="service">
+                    <span class="fa-solid fa-id-card service-icon"></span>
+                    <p>Media relations contact information of your 
+                    choice on each profile on our experts listings</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="call-To-Action">
+            <div class="call-To-Action-container">
+                <div class="left-call">
+                    <h3>Join Our Growing Community</h3>
+                    <p>At Experts Finder, we're not just building a search engine; 
+                        we're fostering a community of professionals passionate 
+                        about their craft. As a Web Developer or Designer, you'll 
+                        have the opportunity to showcase your talent and connect 
+                        with clients from around the globe.</p>
+                </div>
+                <div class="right-call">
+                    <a href="/src/becomeanexpert.html" class="call-btn">Become An Expert</a>
+                </div>
+            </div>
+        </section>
+     
+    <!--Page Footer Begginning-->
+    <footer>
+        <!--Full Conatainer Containing the Main and Sub Footer-->
+        <div class="full-in-two">
+            <!--*******Main Footer Row, First Row******-->
+            <div class="footer-row">
+                <!--First Column-->
+                <div class="footer-column first-child">
+                    <div class="footer-title"><h1>Expertise Finder</h1></div>
+                    <p>Supporting expertise with sofware and services since 2011</p>
+                    
+                    <div class="social-icon">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-google"></i>
+                    </div>
+                </div>
+                <!--/End, First Column-->
+
+                <!--Second Column-->
+                <div class="footer-column">
+                    <div class="footer-title"><h1>Company</h1></div>
+                    <li><a href="/src/about.html">About</a></li>
+                    <li><a href="/src/findanexpert.html#contact-popup">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Blog</a></li>
+                </div>
+                <!--/End, Second Column-->
+
+                <!--Third Column-->
+                <div class="footer-column">
+                    <div class="footer-title"><h1>Services</h1></div>
+                    <li><a href="#">Profiles optimization (SEO)</a></li>
+                    <li><a href="#">Dedicated point of contact</a></li>
+                    <li><a href="#">Media relations contact</a></li>
+                    <li><a href="#">Experts Directory Software</a></li>
+                </div>
+                <!--/End, Third Column-->
+
+                <!--Fourth Column-->
+                <div class="footer-column">
+                    <div class="footer-title"><h1>Useful Links</h1></div>
+                    <li><a href="index.html#feedback">Give A Feedback</a></li>
+                    <li><a href="#">Why List Your Faculty</a></li>
+                    <li><a href="/src/findanexpert.html">Find An Expert</a></li>
+                    <li><a href="/src/becomeanexpert.html">Become An Expert</a></li>
+                </div>
+                <!--/End, Fourth Column-->
+
+                <!--Fith Column-->
+                <div class="footer-column">
+                    <div class="footer-title"><h1>Contact</h1></div>
+                    <li><a href="index.html#feedback">Give A Feedback</a></li>
+                    <li><a href="/src/findanexpert.html#contact-popup">Make A Request</a></li>
+                    <li><a href="#">Supporting Expertise</a></li>
+                </div>
+                <!--/End, Fith Column-->
+            </div>
+            <!--******/End of Main Footer Row, First Row******-->
+
+            <!--*****Sub Footer(Second Footer)*****-->
+            <div class="second-row">
+                <div class="second-footer-content">
+                    <div class="footer-logo twofooter-column">
+                        <i class="fa-brands fa-shopify"></i>
+                        <h1>ExpertHere</h1>
+                    </div>
+                    <div class="twofooter-column second-child">
+                        <p><span>&copy</span>2023 ExpertsHere Finder Cooperartion</p>
+                    </div>
+                    <div class="twofooter-column last-child">
+                        <p>Privacy</p>
+                        <p>Terms</p>
+                    </div>
+                </div>
+            </div>
+            <!--/End of *****Sub Footer(Second Footer)*****-->
+
+        </div>
+        <!--/End of Full Conatainer Containing the Main and Sub Footer-->
+    </footer>
+    <!--Scroll to Top Button-->
+    <button onclick="topFunction()" id="topscroll" title="Go to top">
+        <i class="fa-solid fa-angles-up fa-beat-fade"></i>
+    </button>
+    <!--/End of Scroll to Top Button-->
+</body>
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script src="../js/about.js"></script>
+</html>

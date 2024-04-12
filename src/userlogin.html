@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/userlogin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <title>Login</title>
+    <script>
+        $(document).ready(function(){
+            $('#icon').click(function(){
+                $('ul').toggleClass('show');
+            });
+        });
+    </script>
+</head>
+<body>
+    <nav>
+        <div class="logo-wrapper"><a href="/src/index.html"><img class="logo" src="/assets/logo.png"></a></div>
+        <ul>
+            <li class="menu effect"><a class="active" href="/src/index.html">Home</a></li>
+            <li class="menu effect"><a href="/src/about.html">About</a></li>
+            <li class="menu effect"><a href="/src/findanexpert.html">Find An Expert</a></li>
+            <li class="menu effect"><a href="/src/becomeanexpert.html">Become An Expert</a></li>
+            <li class="menu"><a class="login-btn" href="/src/userlogin.html">Login</a></li>
+            <li class="profile-photo"><img class="profile" src="/profiles/modified passport.jpg" onclick="toggleMenu()"></li>
+        </ul>
+        <label id="icon">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <div class="user-submenu-wrapper" id="subMenu">
+            <div class="sub-menu">
+                <div class="user-info">
+                    <img src="/profiles/modified passport.jpg">
+                    <h3 class="user-name">Tyler Gobka Bright</h3>
+                </div>
+                <hr>
+                <a href="/src/profileviewpage.html" class="user-menu-link">
+                    <i class="fa-solid fa-user-gear"></i>
+                    <p>Profile</p>
+                    <span><i class="fa-solid fa-angle-right"></i></span>
+                </a>
+                <a href="/src/userlogin.html" class="user-menu-link">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <p>Logout</p>
+                    <span><i class="fa-solid fa-angle-right"></i></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!--*************END of Header Navbar-->
+    <section class="login-page">
+        <div class="login-wrapper">
+            <div class="text-and-title-side">
+                <div class="text-img-stacked">
+                    <img class="illustrator-image" src="/assets/Mobile login-bro.png">
+                    <p>Welcome!</p>
+                    <h3>We Take Care <br>Of Your Profile</h3>
+                </div>
+
+                <span class="fa-solid fa-arrow-right-long fa-bounce right-arrow arrow-icon"></span>
+                <span class="fa-solid fa-arrow-down-long fa-bounce down-arrow arrow-icon"></span>
+
+                <h1>Get Connected <br>With Expertise</h1>
+            </div>
+            <!--Admin Login Form/Home page-->
+            <main id="form-center">
+                <h1>LogIn to Your Account</h1>
+                <form action="post" method="post">
+                    <div class="content">
+                        <input type="text" required><span>
+                            <i class="fa-solid fa-user-tie input-icon"></i></span>
+                        <span></span>
+                        <label for="username">Username*</label>
+                    </div>
+                    <div class="content">
+                        <input type="password" required>
+                        <span><i class="fa-solid fa-lock input-icon"></i></span>
+                        <span></span>
+                        <label for="password">Password*</label>
+                    </div>
+                    <div class="pass">Forgot Password</div>
+                    <input type="submit" value="Login" src="/src/index.html">
+                    <div class="signup_link">
+                        New User? <a href="/src/becomeanexpert.html">Register Here!</a>
+                    </div>
+                </form>
+                <footer class="second-row">
+                    <div class="second-footer-content">
+                        <div class="footer-logo twofooter-column">
+                            <i class="fa-brands fa-shopify"></i>
+                            <h2>ExpertHere</h2>
+                        </div>
+                        <div class="twofooter-column second-child">
+                            <p><span>&copy</span>2023 ExpertsHere Finder Cooperartion</p>
+                        </div>
+                        <div class="twofooter-column last-child">
+                            <p>Privacy</p>
+                            <p>Terms</p>
+                        </div>
+                    </div>
+                </footer>
+            </main>
+        </div>
+    </section>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script src="/js/userlogin.js"></script>
+</html>

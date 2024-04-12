@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/findanexpert.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <title>Find An Expert | Expert Listing A - Z</title>
+
+    <script>
+        //Toggle functionality with JQuery and JS
+        // Shorthand for $( document ).ready()
+        $(document).ready(function(){
+            $('#icon').click(function(){
+                $('ul').toggleClass('show');
+            });
+        });
+        //End of Toggle function
+    </script>
+
+</head>
+<body>
+        <!--*************START of Header Navbar-->
+        <nav>
+            <div class="logo-wrapper"><a href="/src/index.html"><img class="logo" src="/assets/logo.png"></a></div>
+            <ul>
+                <li class="menu effect"><a class="active" href="/src/index.html">Home</a></li>
+                <li class="menu effect"><a href="/src/about.html">About</a></li>
+                <li class="menu effect"><a href="/src/findanexpert.html">Find An Expert</a></li>
+                <li class="menu effect"><a href="/src/becomeanexpert.html">Become An Expert</a></li>
+                <li class="menu"><a class="login-btn" href="/src/userlogin.html">Login</a></li>
+                <li class="profile-photo"><img class="profile" src="/profiles/modified passport.jpg" onclick="toggleMenu()"></li>
+            
+                <div class="profile-drop-mobile">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <img src="/profiles/modified passport.jpg">
+                            <h3 class="user-name">Tyler Gobka Bright</h3>
+                        </div>
+                        <hr>
+                        <a href="/src/profileviewpage.html" class="user-menu-link">
+                            <i class="fa-solid fa-user-gear"></i>
+                            <p>Profile</p>
+                        </a>
+                        <a href="/src/userlogin.html" class="user-menu-link">
+                            <i class="fa-solid fa-arrow-right-from-bracket user-logout-icon"></i>
+                            <p>Logout</p>
+                        </a>
+                    </div>
+                </div>
+            </ul>
+            <label id="icon">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <div class="user-submenu-wrapper" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="/profiles/modified passport.jpg">
+                        <h3 class="user-name">Tyler Gobka Bright</h3>
+                    </div>
+                    <hr>
+                    <a href="/src/profileviewpage.html" class="user-menu-link">
+                        <i class="fa-solid fa-user-gear"></i>
+                        <p>Profile</p>
+                        <span><i class="fa-solid fa-angle-right"></i></span>
+                    </a>
+                    <a href="/src/userlogin.html" class="user-menu-link">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        <p>Logout</p>
+                        <span><i class="fa-solid fa-angle-right"></i></span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!--*************END of Header Navbar-->
+
+    <!--Start of Search Results Sear Bar Section-->
+    <section class="find-an-expert-bar-title">
+        <h1>Find an Expert by Category</h1>
+    </section>
+
+    <!--*********Front Search Box Area-->
+    <section class="search-box-section">
+        <div class="search-bar-wrapper">
+            <div class="search-input">
+                <div class="user-icon-box">
+                    <i class="fa-solid fa-user-tie fa-fade"></i>
+                </div>
+                <input type="text" placeholder="Search Experts Here" id="text-compute">
+                <!-- Start of Auto Complete Search Box-->
+                <div class="autocom-box">
+                    <li>Programming Language</li>
+                    <li>Assembly Language</li>
+                    <li>Machine Learning</li>
+                    <li>Artificial Intellegence</li>
+                    <li>Python Programming</li>
+                    <li>Cpp Language</li>
+                    <li>Object Oriented Programming</li>
+                </div>
+                <!-- END of Auto Complete Search Box-->
+                <div class="search-icon-box">
+                    <a href="/src/resultspage.html">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass fa-fade"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--********/ENd of Front Search Box-->
+
+    <!--****Start of Expert Listing From A - Z****-->
+    <section class="a-to-z-listing-section">
+        <div class="alphabetical-ordering">
+            <div class="ordering-row first-row">
+                <li><a href="#category-a">a</a></li>
+                <li><a href="#category-b">b</a></li>
+                <li><a href="#">c</a></li>
+                <li><a href="#">d</a></li>
+                <li><a href="#">e</a></li>
+                <li><a href="#">f</a></li>
+                <li><a href="#">g</a></li>
+                <li><a href="#">h</a></li>
+                <li><a href="#">i</a></li>
+                <li><a href="#">j</a></li>
+                <li><a href="#">k</a></li>
+                <li><a href="#">m</a></li>
+                <li><a href="#">n</a></li>
+                <li><a href="#">o</a></li>
+                <li><a href="#">p</a></li>
+                <li><a href="#">q</a></li>
+                <li><a href="#">r</a></li>
+                <li><a href="#">s</a></li>
+                <li><a href="#">t</a></li>
+            </div>
+            <div class="ordering-row">
+                <li><a href="#">u</a></li>
+                <li><a href="#">v</a></li>
+                <li><a href="#">w</a></li>
+                <li><a href="#">x</a></li>
+                <li><a href="#">y</a></li>
+                <li><a href="#">z</a></li>
+            </div>
+        </div>
+
+        <!--Start of A Category-->
+        <section class="categories" id="category-a">
+            <h1 id="alphabet-a">a</h1>
+            <div class="category-a-wrapper">
+                <div class="category-a-column">
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                </div>
+                <div class="category-a-column">
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                </div>
+            </div>
+        </section>
+        <!--End of A Category-->
+
+
+        <!--Start of B Category-->
+        <section class="categories" id="category-b">
+            <h1 id="alphabet-a">b</h1>
+            <div class="category-a-wrapper">
+                <div class="category-a-column">
+                    <li><a href="/src/expertisegroup.html">Agile Development Expert</a></li>
+                    <li><a href="/src/expertisegroup.html">Agile Development Expert</a></li>
+                    <li><a href="/src/expertisegroup.html">Agile Development Expert</a></li>
+                    <li><a href="/src/expertisegroup.html">Agile Development Expert</a></li>
+                    <li><a href="/src/expertisegroup.html">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="/src/expertisegroup.html">Agile Development Expert</a></li>
+                    <li><a href="/src/expertisegroup.html">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="/src/expertisegroup.html">Agile Development Expert</a></li>
+                    <li><a href="/src/expertisegroup.html">Agile Development Expert</a></li>
+                    <li><a href="/src/expertisegroup.html">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="/src/expertisegroup.html">Agile Development Expert</a></li>
+                    <li><a href="/src/expertisegroup.html">Agile Development Expert</a></li>
+                    <li><a href="/src/expertisegroup.html">Agile Development Expert</a></li>
+                </div>
+                <div class="category-a-column">
+                    <li><a href="/src/expertisegroup.html">Agile Development Expert</a></li>
+                    <li><a href="/src/expertisegroup.html">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="/src/expertisegroup.html">Agile Development Expert</a></li>
+                    <li><a href="/src/expertisegroup.html">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="/src/expertisegroup.html">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="/src/expertisegroup.html">Agile Development Expert</a></li>
+                    <li><a href="/src/expertisegroup.html">Agile Development Expert</a></li>
+                    <li><a href="/src/expertisegroup.html">Agile Development Expert</a></li>
+                    <li><a href="/src/expertisegroup.html">Agile Development Expert</a></li>
+                    <li><a href="/src/expertisegroup.html">Agile Development Expert</a></li>
+                    <li><a href="/src/expertisegroup.html">Agile Development Expert</a></li>
+                    <li><a href="/src/expertisegroup.html">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="#">Agile Development Expert</a></li>
+                    <li><a href="/src/expertisegroup.html">Agile Development Expert</a></li>
+                    <li><a href="/src/expertisegroup.html">Agile Development Expert</a></li>
+                </div>
+            </div>
+        </section>
+        <!--End of B Category-->
+    </section>
+    <!--/****END of Expert Listing From A to Z *****-->
+
+    <!--Expert Witness Start-->
+    <section class="expert-witness-section">
+        <div class="expert-witness-wrapper">
+            <h1>What is an expert witness?</h1>
+            <p>“[A] witness in a court of law who is an expert on a particular subject”. 
+                This is the short answer courtesy of the Merriam-Webster definition of an expert witness.
+            <br>
+            <br>
+                There is no exact rule on who can and cannot be an expert witness. While practical 
+                experience can be enough, most often an expert witness has formal education and expertis
+                e in the area they are to speak on. He or she presents an expert opinion without having 
+                been a witness to any occurrence relating to the lawsuit or criminal case.
+                <br>
+                <br>
+                An expert witness is to give to the court or tribunal an impartial opinion on aspects 
+                of matters within his or her area of expertise that is in dispute.
+                <br>
+                <br>
+                Where it gets tricky is that while an expert witness is not to assist in the 
+                formulation and preparation of a party’s claim or defence, yet an expert witness
+                does not have an overriding duty to the court but to the party instructing him.
+                <br>
+                <br>
+                Experts are usually paid for their services and the opposition may ask them about 
+                the amount they are receiving for their work on the case. In most jurisdictions, 
+                both sides must exchange the names and addresses of proposed experts prior to depositions.
+                <br>
+                <br>
+                It can be a little different depending on the country. For example, in England & Wales, 
+                the court gives permission for an expert witness to give evidence. A person is accepted 
+                by the judge as an expert by some combination of education, training, certification, 
+                skills or experience.</p>
+        </div>
+    </section>
+    <!--Expert Witness End-->
+
+    <!--Dont See What you need Make a Request Start-->
+    <section class="dont-see-what-you-need-section" id="contact-popup">
+        <div class="dont-see-what-you-need-wrapper" id="popUp">
+                <h1>Don't See What You Need?</h1>
+           <button type="button" id="showRequestBox">Make A Request</button>
+
+           <!--Popup box start-->
+           <div class="popup-outer">
+                <div class="popup-box">
+                    <i id="closeBtn" class="fa-solid fa-circle-xmark close"></i>
+                    <div class="request-title">
+                        <h1>Make A Request</h1> 
+                    </div>
+                    <!--popup box inputs and texarea-->
+                    <form>
+                        <label>Full Name</label>
+                        <input type="text" required placeholder="Full Name">
+                        <label>Email</label>
+                        <input type="email" required placeholder="Email">
+                        <label>Expert Type</label>
+                        <input type="text" required placeholder="Expert Type">
+                        <label>Description</label>
+                        <textarea name=""required id="" placeholder="Decribe Expert Here..."></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+           </div>
+        </div>
+    </section>
+    <!--/Dont See What you need Make a Request End-->
+
+    <!--Page Footer Begginning-->
+    <footer>
+        <div class="full-in-two">
+            <div class="footer-row">
+                <div class="footer-column first-child">
+                    <div class="footer-title"><h1>Expertise Finder</h1></div>
+                    <p>Supporting expertise with sofware and services since 2011</p>
+                    
+                    <div class="social-icon">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-google"></i>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <div class="footer-title"><h1>Company</h1></div>
+                    <li><a href="/src/about.html">About</a></li>
+                    <li><a href="#contact-popup">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Blog</a></li>
+                </div>
+                <!--Third Column-->
+                <div class="footer-column">
+                    <div class="footer-title"><h1>Services</h1></div>
+                    <li><a href="#">Profiles optimization (SEO)</a></li>
+                    <li><a href="#">Dedicated point of contact</a></li>
+                    <li><a href="#">Media relations contact</a></li>
+                    <li><a href="#">Experts Directory Software</a></li>
+                </div>
+                <!--/End, Third Column-->
+
+                <!--Fourth Column-->
+                <div class="footer-column">
+                    <div class="footer-title"><h1>Useful Links</h1></div>
+                    <li><a href="index.html#feedback">Give A Feedback</a></li>
+                    <li><a href="#">Why List Your Faculty</a></li>
+                    <li><a href="/src/findanexpert.html">Find An Expert</a></li>
+                    <li><a href="/src/becomeanexpert.html">Become An Expert</a></li>
+                </div>
+                <!--/End, Fourth Column-->
+
+                <!--Fith Column-->
+                <div class="footer-column">
+                    <div class="footer-title"><h1>Contact</h1></div>
+                    <li><a href="index.html#feedback">Give A Feedback</a></li>
+                    <li><a href="/src/findanexpert.html#contact-popup">Make A Request</a></li>
+                    <li><a href="#">Supporting Expertise</a></li>
+                </div>
+                <!--/End, Fith Column-->
+            </div>
+
+            <div class="second-row">
+                <div class="second-footer-content">
+                    <div class="footer-logo twofooter-column">
+                        <i class="fa-brands fa-shopify"></i>
+                        <h1>ExpertHere</h1>
+                    </div>
+                    <div class="twofooter-column second-child">
+                        <p><span>&copy</span>2023 ExpertsHere Finder Cooperartion</p>
+                    </div>
+                    <div class="twofooter-column last-child">
+                        <p>Privacy</p>
+                        <p>Terms</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+    <!--Scroll to Top Button-->
+    <button onclick="topFunction()" id="topscroll" title="Go to top">
+        <i class="fa-solid fa-angles-up fa-beat-fade"></i>
+    </button>
+    <!--/End of Scroll to Top Button-->
+</body>
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script src="../js/findanexpert.js"></script>
+<script src="../js/searchsuggestion.js"></script>
+</html>
